@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VSL · Landing de venta</title>
+<meta name="description" content="Mirá el video y, si calificás, escribime por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- CABECERA -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand__mark" aria-hidden="true">N</div>
+      <div class="brand__text">
+        <span class="brand__name">[NOMBRE DE TU AMIGO]</span>
+        <span class="brand__role">[Especialidad / rubro]</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span class="header-actions__slots">Cupos de este mes: <strong>[N] disponibles</strong></span>
+      <a class="btn btn--ghost" href="#" data-wa="header" data-track="whatsapp_header">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 9.5c.3 1.8 2.6 4.3 5 5l1.2-1.2-1.9-1-1 .6c-.8-.4-1.7-1.3-2.1-2.1l.6-1-1-1.9Z"></path></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO + VSL -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <span class="eyebrow">Solo para gente que va en serio</span>
+      <h1>No trabajo con todo el mundo.<br><em>Mirá este video</em> antes de escribirme.</h1>
+      <p class="hero__lead">En [X] minutos te explico cómo [RESULTADO PRINCIPAL] sin [OBJECIÓN PRINCIPAL]. Si no es para vos, te ahorro el tiempo a vos y a mí.</p>
+
+      <!-- Reproductor VSL -->
+      <div class="vsl">
+        <div class="vsl__screen">
+          <div class="vsl__glow" aria-hidden="true"></div>
+
+          <button type="button" class="vsl__play" id="vsl-play" data-track="vsl_play" aria-label="Reproducir video principal">
+            <span class="vsl__play-ring">
+              <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent)"><path d="M8 5.5v13l10.5-6.5Z"></path></svg>
+            </span>
+            <span class="vsl__play-label">Tocá para ver con sonido · [MM:SS]</span>
+          </button>
+
+          <div class="vsl__placeholder" id="vsl-stage" hidden>
+            <strong>Video principal (VSL)</strong>
+            <span>Insertar aquí: Vimeo / Wistia / YouTube no listado · sin controles de adelantar</span>
+          </div>
+
+          <div class="vsl__progress" aria-hidden="true">
+            <div class="vsl__progress-bar" id="vsl-progress"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="cta-slot__hint" id="cta-locked">El botón para aplicar aparece mientras mirás el video.</p>
+      <div class="cta-slot" id="cta-visible" hidden>
+        <a class="btn btn--lg" href="#aplicar" data-track="cta_aplicar">Quiero ver si califico</a>
+        <span class="cta-slot__hint">Respuesta personal por WhatsApp en menos de [24 h]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRUEBA SOCIAL -->
+<section class="logos" aria-label="Clientes">
+  <div class="container">
+    <span class="logos__label">Confiaron en él</span>
+    <div class="logos__row">
+      <div class="logo-slot">[LOGO]</div>
+      <div class="logo-slot">[LOGO]</div>
+      <div class="logo-slot">[LOGO]</div>
+      <div class="logo-slot">[LOGO]</div>
+      <div class="logo-slot">[LOGO]</div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN ES -->
+<section class="section">
+  <div class="container stack">
+    <div class="section-head">
+      <span class="eyebrow">Filtro</span>
+      <h2 class="section-title">Seamos claros desde el principio.</h2>
+    </div>
+    <div class="grid-2">
+      <div class="panel-cell">
+        <h3>Es para vos si</h3>
+        <ul class="check-list">
+          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent)"><path d="m5 12 5 5L20 7"></path></svg>[Situación concreta del cliente ideal]</li>
+          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent)"><path d="m5 12 5 5L20 7"></path></svg>[Tenés presupuesto y querés resultados, no excusas]</li>
+          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent)"><path d="m5 12 5 5L20 7"></path></svg>[Estás dispuesto a seguir un método al pie de la letra]</li>
+        </ul>
+      </div>
+      <div class="panel-cell panel-cell--muted">
+        <h3>No es para vos si</h3>
+        <ul class="check-list check-list--muted">
+          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#77736B" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"></path></svg>[Buscás la opción más barata del mercado]</li>
+          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#77736B" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"></path></svg>[Querés resultados sin hacer tu parte]</li>
+          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#77736B" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"></path></svg>[Vas a pedir descuento antes de escuchar]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS EN VIDEO -->
+<section class="section testimonials">
+  <div class="container stack" style="gap: 48px">
+    <div class="testimonials__head">
+      <div class="section-head" style="max-width: 640px">
+        <span class="eyebrow">Testimonios</span>
+        <h2 class="section-title">No me creas a mí. <em>Escuchalos a ellos.</em></h2>
+      </div>
+      <p class="testimonials__intro">Clientes reales, sin guion. Elegí un testimonio para verlo.</p>
+    </div>
+
+    <div class="testimonials__body">
+      <div class="testimonials__player">
+        <div class="testimonials__screen">
+          <div class="testimonials__screen-inner">
+            <span class="testimonials__play">
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent)"><path d="M8 5.5v13l10.5-6.5Z"></path></svg>
+            </span>
+            <span class="testimonials__duration" id="t-duration"></span>
+          </div>
+        </div>
+        <div class="testimonials__quote">
+          <p id="t-quote"></p>
+          <span id="t-author"></span>
+        </div>
+      </div>
+
+      <div class="testimonials__list" id="t-list">
+        <button type="button" class="testimonial-item" data-index="0" data-track="testimonio_click">
+          <span class="testimonial-item__thumb">[Miniatura]</span>
+          <span class="testimonial-item__text"><span class="testimonial-item__name">[Cliente 1]</span><span class="testimonial-item__result">[Resultado concreto en números]</span><span class="testimonial-item__label">Ver testimonio</span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="section">
+  <div class="container stack" style="gap: 56px">
+    <div class="section-head">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="section-title">Tres pasos. Ninguno de relleno.</h2>
+    </div>
+    <div class="steps">
+      <div class="step step--active">
+        <span class="step__num">01</span>
+        <h3>Aplicás</h3>
+        <p>Completás el formulario y me llega directo a WhatsApp. Leo cada solicitud personalmente.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">02</span>
+        <h3>Llamada de diagnóstico</h3>
+        <p>[Duración] minutos. Si veo que no te puedo ayudar, te lo digo en la cara.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">03</span>
+        <h3>Ejecutamos</h3>
+        <p>[Descripción del servicio / programa]. Resultados medibles en [plazo].</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="offer-wrap">
+  <div class="container">
+    <div class="offer">
+      <div class="offer__main">
+        <span class="eyebrow">La oferta</span>
+        <h2 class="offer__title">[NOMBRE DEL PROGRAMA / SERVICIO]</h2>
+        <ul class="offer__list">
+          <li><span>[Entregable 1]</span><span>[valor]</span></li>
+          <li><span>[Entregable 2]</span><span>[valor]</span></li>
+          <li><span>[Entregable 3]</span><span>[valor]</span></li>
+          <li><span>[Bonus exclusivo]</span><span>[valor]</span></li>
+        </ul>
+      </div>
+      <div class="offer__side">
+        <span class="offer__label">Inversión</span>
+        <span class="offer__price">[PRECIO]</span>
+        <span class="offer__terms">[Forma de pago / cuotas]</span>
+        <a class="btn" href="#aplicar" data-track="cta_oferta">Aplicar ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTÍA -->
+<section class="guarantee-wrap">
+  <div class="container">
+    <div class="guarantee">
+      <svg role="img" aria-label="Garantía" class="guarantee__icon" width="96" height="96" viewBox="0 0 48 48" fill="none" stroke="#C9A86A" stroke-width="1.2"><path d="M24 4 8 10v12c0 10 7 18 16 22 9-4 16-12 16-22V10Z"></path><path d="m17 24 5 5 9-10"></path></svg>
+      <div class="guarantee__text">
+        <h3>Garantía [DE X DÍAS]</h3>
+        <p>[Condición exacta de la garantía]. Si yo no cumplo mi parte, no te quedás con el riesgo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq__list" id="faq-list">
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-0" id="faq-q-0">
+          <span>¿Cuánto tiempo necesito para ver resultados?</span>
+          <svg aria-hidden="true" class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M12 5v14M5 12h14"></path></svg>
+        </button>
+        <p class="faq__a" id="faq-a-0" hidden>[Respuesta directa con plazo realista]</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+          <span>¿Por qué no publicás el precio en todos lados?</span>
+          <svg aria-hidden="true" class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M12 5v14M5 12h14"></path></svg>
+        </button>
+        <p class="faq__a" id="faq-a-1" hidden>[Respuesta: cada caso se evalúa antes de aceptar]</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+          <span>¿Qué pasa si no me funciona?</span>
+          <svg aria-hidden="true" class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M12 5v14M5 12h14"></path></svg>
+        </button>
+        <p class="faq__a" id="faq-a-2" hidden>[Explicación de la garantía]</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+          <span>¿Trabajás con cualquier rubro?</span>
+          <svg aria-hidden="true" class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M12 5v14M5 12h14"></path></svg>
+        </button>
+        <p class="faq__a" id="faq-a-3" hidden>[Rubros con los que sí y con los que no]</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+          <span>¿Cómo es el pago?</span>
+          <svg aria-hidden="true" class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M12 5v14M5 12h14"></path></svg>
+        </button>
+        <p class="faq__a" id="faq-a-4" hidden>[Medios de pago y cuotas]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APLICAR / FORMULARIO A WHATSAPP -->
+<section class="apply" id="aplicar">
+  <div class="container">
+    <div class="apply__intro">
+      <span class="eyebrow">Último paso</span>
+      <h2 class="apply__title">Si llegaste hasta acá, <em>hablemos.</em></h2>
+      <p class="apply__text">Poné tu nombre y se abre mi WhatsApp con el mensaje listo. Sin bots, sin secretarias. Respondo yo.</p>
+      <p class="apply__slots">Quedan <strong>[N] cupos</strong> para [mes].</p>
+    </div>
+    <form class="apply__form" id="apply-form">
+      <div class="field">
+        <label for="f-nombre">Nombre</label>
+        <input id="f-nombre" name="nombre" type="text" placeholder="Tu nombre y apellido" autocomplete="name">
+      </div>
+      <a class="btn btn--lg" href="#" data-wa="form" data-track="lead_whatsapp" id="form-wa">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path></svg>
+        Abrir WhatsApp
+      </a>
+      <small>Se abre WhatsApp con el mensaje ya escrito. Solo tenés que tocar enviar.</small>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- PIE -->
+<footer class="site-footer">
+  <div class="container">
+    <span>© [AÑO] [NOMBRE]. Todos los derechos reservados.</span>
+    <span class="site-footer__links"><a href="#">Privacidad</a><a href="#">Términos</a><span>Este sitio usa píxel de seguimiento (Meta / GA4).</span></span>
+  </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a class="wa-float" href="#" data-wa="float" data-track="whatsapp_flotante" aria-label="Escribir por WhatsApp">
+  <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 9.5c.3 1.8 2.6 4.3 5 5l1.2-1.2-1.9-1-1 .6c-.8-.4-1.7-1.3-2.1-2.1l.6-1-1-1.9Z"></path></svg>
+</a>
+
+<script src="js/config.js"></script>
+<script src="js/landing.js"></script>
+</body>
+</html>
