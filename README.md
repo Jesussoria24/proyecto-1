@@ -2,19 +2,24 @@
 
 Sitio estático: no necesita build, ni servidor, ni base de datos. Se sube la carpeta tal cual.
 
+Flujo: **link en bio** (`hub.html`) → botón 1: **curso de entrada** con cobro (`intro.html`) · botón 2: **VSL** con video y testimonios (`index.html`).
+
 ## Archivos
 
-- `index.html`: landing de venta (público).
+- `hub.html`: link en bio (público). Perfil, dos botones principales, testimonios y CTA.
+- `intro.html`: curso de entrada / checkout (público). Precios, qué incluye y temario.
+- `index.html`: landing de venta con el VSL (público).
 - `tracker.html`: tracker interno con datos de ejemplo. **No lo dejes público con datos reales.** Tiene `noindex`, pero eso no es protección.
 - `css/styles.css`: estilos compartidos.
 - `js/config.js`: número de WhatsApp (`WHATSAPP_NUMBER`). Cambialo acá si cambia el número.
-- `js/landing.js`, `js/tracker.js`: interacción de cada página.
+- `js/landing.js`, `js/intro.js`, `js/tracker.js`: interacción de cada página.
 
 ## Antes de publicar
 
-1. Completar los campos entre corchetes en `index.html` (nombre, precio, testimonios, logos, garantía, año, etc.).
+1. Completar los campos entre corchetes en todas las páginas: `hub.html` (nombre, foto, bio, testimonios), `intro.html` (nombre del curso, precios, módulos del temario en `js/intro.js`) e `index.html` (nombre, precio, testimonios, logos, garantía, año, etc.).
 2. Insertar el video (Vimeo, Wistia o YouTube no listado) en el reproductor de `index.html`.
-3. Revisar que el número en `js/config.js` sea `5492664229899`.
+3. Enlazar los botones de compra de `intro.html` (`comprar_ars`, `comprar_usd`, `comprar_regalo`) a tu pasarela de pago.
+4. Revisar que el número en `js/config.js` sea `5492664229899`.
 
 ## Subir (elegí una opción)
 
